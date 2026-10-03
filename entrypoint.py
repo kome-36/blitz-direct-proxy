@@ -79,12 +79,35 @@ node = (
 )
 sub_b64 = base64.b64encode(node.encode()).decode()
 
-PAGE = """<!doctype html><html><head><meta charset="utf-8"><title>blitz-direct node</title></head>
-<body style="font-family:sans-serif;max-width:640px;margin:40px auto">
-<h2>blitz-direct proxy node</h2>
-<p>Status: <b>online</b></p>
-<p>Subscription: <a href="/sub">/sub</a></p>
-<p>Protocol: VLESS + WS + TLS (port 443, path /vless), no argo tunnel.</p>
+PAGE = """<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nexora — Team Analytics Platform</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:#1a202c;background:#fff}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 6%;border-bottom:1px solid #edf2f7}
+.logo{font-weight:800;font-size:20px;color:#2b6cb0}
+nav a{margin-left:24px;text-decoration:none;color:#4a5568;font-size:14px}
+.hero{text-align:center;padding:90px 6% 60px;background:linear-gradient(180deg,#ebf4ff,#fff)}
+.hero h1{font-size:44px;margin-bottom:16px}
+.hero p{color:#4a5568;font-size:18px;max-width:560px;margin:0 auto 32px}
+.btn{display:inline-block;background:#2b6cb0;color:#fff;padding:14px 34px;border-radius:8px;text-decoration:none;font-weight:600}
+.feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;padding:60px 6%}
+.card{border:1px solid #e2e8f0;border-radius:12px;padding:28px}
+.card h3{margin-bottom:10px;font-size:17px}
+.card p{color:#718096;font-size:14px;line-height:1.6}
+footer{text-align:center;padding:32px;color:#a0aec0;font-size:13px;border-top:1px solid #edf2f7}
+</style></head><body>
+<nav><div class="logo">Nexora</div><div><a href="#">Product</a><a href="#">Pricing</a><a href="#">Docs</a><a href="#">Sign in</a></div></nav>
+<div class="hero"><h1>Analytics your team will actually use</h1>
+<p>Nexora turns raw product data into dashboards everyone understands. No SQL required.</p>
+<a class="btn" href="#">Start free trial</a></div>
+<div class="feats">
+<div class="card"><h3>Real-time dashboards</h3><p>Metrics update the second events happen. Build views with drag and drop.</p></div>
+<div class="card"><h3>Team workspaces</h3><p>Share boards, annotate charts, and keep every discussion next to the data.</p></div>
+<div class="card"><h3>200+ integrations</h3><p>Connect your warehouse, CRM, and billing stack in a few clicks.</p></div>
+</div>
+<footer>&copy; 2026 Nexora Labs, Inc. &middot; Privacy &middot; Terms &middot; Status</footer>
 </body></html>""".encode()
 
 
